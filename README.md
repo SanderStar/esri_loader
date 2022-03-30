@@ -18,22 +18,28 @@ export { loadModules } from './modules.js';
 export { getScript, isLoaded, loadScript, setDefaultOptions } from './script.js';
 export { loadCss } from './utils/css.js';
 export { utils };
-<code>
+</code>
   
 - modules.js
 
+<code>
 import { getScript, isLoaded, loadScript } from './script.js';
+  </code>
 
 - script.js
 
+<code>
 import { loadCss } from './utils/css.js';
 import utils from './utils/index.js';
 import { getCdnUrl } from './utils/url.js';
+</code>
 
 node_modules/esri-loader/dist/utils folder
 
 - css.js
 
+<code>
 import { getCdnCssUrl, parseVersion } from './url.js';
+</code>
 
 3. run the index.html
